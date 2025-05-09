@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pacc is a professional agency specializing in Comptabilité, Fiscalité, Controle & Audit. We provide expert financial and auditing solutions tailored to your needs.">
+    <meta name="keywords" content="Pacc, Comptabilité, Fiscalité, Controle, Audit, Financial Solutions, Auditing Services">
+    <meta name="author" content="Pacc Agency">
+    <meta name="theme-color" content="#da373d">
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>PACC - Spécialée en Comptabilité, Fiscalité, Controle & Audit</title>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da373d',
+                    },
+                },
+            },
+        };
+    </script>
+
+</head>
+
+<body class="bg-neutral-100">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div
+                class="animate-spin rounded-full h-20 w-20 flex justify-center items-center border-b-2 border-r-2 border-primary">
+                <div
+                    class="animate-spin rounded-full h-16 w-16 flex justify-center items-center border-b-2 border-r-2 border-neutral-700">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+    <div
+        class="overlay md:translate-x-full translate-x-[750px] duration-300 bg-neutral-900 bg-opacity-75 fixed top-0 left-0 w-full h-screen z-50">
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-white bg-opacity-75 z-50">
+        <!-- container -->
+        <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
+            <div class="w-32 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul id="navItems"
+                class="md:relative fixed top-0 left-0 md:bg-transparent bg-neutral-950 md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm font-medium text-neutral-700 md:items-center justify-start md:p-0 p-10 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                <li><a class="hover:text-primary text-primary duration-300 ease-in-out" href="/">Accueil</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/about">Apropos</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/services">Services</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/projects">Secteurs</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/faqs">Parténaires</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/faqs">Blog</a></li>
+                <a href="/contact"
+                    class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                    Contact
+                </a>
+
+            </ul>
+
+            <div id="menu-bar"
+                class="hamburger md:hidden block w-8 h-8 flex items-center justify-center bg-primary text-white rounded-md cursor-pointer z-50">
+                <i class="fi fi-rr-bars-staggered text-lg translate-y-0.5"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section
+        class="relative bg-gradient-to-r from-transparent to-white md:h-[55vh] h-[65vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                Zéro risque d'affaire pour chacun de nos partenaires clients
+                <span class="text-primary">de tout pour vous.</span>
+            </h1>
+            <p class="max-w-[550px] m-auto text-white my-4">
+                Nous sommes une agence professionnelle spécialisée dans la comptabilité, la fiscalité, le contrôle et l'audit.
+            </p>
+
+            <!-- CTA -->
+            <a href="/about"
+                class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 duration-300 bg-primary hover:bg-primary/80 text-sm text-white">
+                Learn more
+                <i class="fi fi-rr-arrow-small-right translate-y-0.5 inline-block"></i>
+            </a href="/">
+        </div>
+
+        <!-- carousel -->
+        <div class="carousel absolute bottom-0 bg-neutral-950 w-full md:h-[55vh] h-[65vh] z-10">
+            <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1653566031414-4ac6936a3e66?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1653566031486-dc4ead13a35d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1653566031535-bcf33e1c2893?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1653669487003-7d89b2020f3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-white  md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-neutral-400 mb-2">Email: <a href="#"
+                            class="text-neutral-400 hover:text-primary">[Insert Email Here]</a></p>
+                    <p class="text-sm text-neutral-400 mb-2">Phone: <a href="#"
+                            class="hover:text-primary">[Insert Phone Number Here]</a></p>
+                    <p class="text-sm text-neutral-400">Address: [Insert Address Here]</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-neutral-400 hover:text-primary">Accueil</a></li>
+                        <li><a href="#" class="text-sm text-neutral-400 hover:text-primary">Apropos</a></li>
+                        <li><a href="#" class="text-sm text-neutral-400 hover:text-primary">Services</a></li>
+                        <li><a href="#" class="text-sm text-neutral-400 hover:text-primary">Secteurs</a></li>
+                        <li><a href="#" class="text-sm text-neutral-400 hover:text-primary">Parténaires</a></li>
+                        <li><a href="#" class="text-sm text-neutral-400 hover:text-primary">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="sm:w-[275px] w-full">
+                    <h3 class="text-xl font-bold mb-4">Stay Updated</h3>
+                    <p class="text-sm text-neutral-400 mb-4">Subscribe to our newsletter for the latest updates and news.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-neutral-900 text-sm text-white outline-none border border-neutral-800 focus:border-primary duration-500 p-2 sm:rounded-l-lg sm:rounded-none rounded-lg text-neutral-900">
+                        <button type="submit"
+                            class="inline-block sm:rounded-r-lg sm:rounded-none rounded-lg py-2 px-6 bg-primary hover:bg-primary/80 text-white">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <p class="text-sm text-neutral-400 mb-4">Follow us and stay connected on social media for the latest
+                        updates and news.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-twitter-alt"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="text-center mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">© <span id="copyright"></span> ItalAfrica Group. All rights reserved.
+                </p>
+                <p class="text-sm mt-2">Certified: <span class="text-primary">Made in Italy</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+    </script>
+
+    <!-- loader -->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#loader').fadeOut();
+        })
+    </script>
+
+    <!-- Copyright -->
+    <script>
+        const copyright = new Date().getFullYear();
+        document.getElementById('copyright').innerHTML = copyright;
+    </script>
+
+
+</body>
+
+</html>
