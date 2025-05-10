@@ -64,7 +64,8 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-white bg-opacity-75 z-50">
+    <nav
+        class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-white bg-opacity-75 border-b border-neutral-100 z-50">
         <!-- container -->
         <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
             <div class="w-32 py-4">
@@ -74,7 +75,12 @@
             </div>
 
             <ul id="navItems"
-                class="md:relative fixed top-0 left-0 md:bg-transparent bg-neutral-950 md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm font-medium text-neutral-700 md:items-center justify-start md:p-0 p-10 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                class="md:relative fixed top-0 left-0 md:bg-transparent bg-white md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm font-medium text-neutral-700 md:items-center justify-start md:px-0 px-10 md:py-0 py-3 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                <div class="md:hidden block w-32 pb-4">
+                    <a href="/">
+                        <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                    </a>
+                </div>
                 <li><a class="hover:text-primary text-primary duration-300 ease-in-out" href="/">Accueil</a></li>
                 <li><a class="hover:text-primary duration-300 ease-in-out" href="/about">Apropos</a></li>
                 <li><a class="hover:text-primary duration-300 ease-in-out" href="/services">Services</a></li>
@@ -136,7 +142,7 @@
 
     <!-- Sustainability -->
     <section class="py-16 bg-neutral-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[1200px] mx-auto px-3">
             <div class="lg:grid lg:grid-cols-2 lg:gap-16">
                 <!-- Image Grid -->
                 <div class="mb-12 lg:mb-0">
@@ -167,19 +173,19 @@
                     <div class="space-y-4 mb-8">
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mt-1">
-                                <i class="fi fi-rr-check text-primary"></i>
+                                <i class="fi fi-rr-check-circle text-primary"></i>
                             </div>
                             <p class="ml-3 text-neutral-700">Energy-efficient building materials</p>
                         </div>
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mt-1">
-                                <i class="fi fi-rr-check text-primary"></i>
+                                <i class="fi fi-rr-check-circle text-primary"></i>
                             </div>
                             <p class="ml-3 text-neutral-700">Renewable energy solutions</p>
                         </div>
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mt-1">
-                                <i class="fi fi-rr-check text-primary"></i>
+                                <i class="fi fi-rr-check-circle text-primary"></i>
                             </div>
                             <p class="ml-3 text-neutral-700">Sustainable construction practices</p>
                         </div>
@@ -193,6 +199,103 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Ours services -->
+    <section class="bg-neutral-100 md:py-20 py-10">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-bold text-neutral-700 text-center mb-8">Notre Services</h2>
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+
+                <div class="bg-white border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-search translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-xl text-neutral-700 font-bold mb-4">Audit & Strategie</h3>
+                    <p class="text-sm text-gray-600">We bring Italy’s best to Africa, ensuring authentic Italian
+                        craftsmanship and premium quality in every product and project.</p>
+                </div>
+
+                <div class="bg-white border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-people translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-xl text-neutral-700 font-bold mb-4">Gestion des ressources</h3>
+                    <p class="text-sm text-gray-600">We bring Italy’s best to Africa, ensuring authentic Italian
+                        craftsmanship and premium quality in every product and project.</p>
+                </div>
+
+                <div class="bg-white border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-flag translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-xl text-neutral-700 font-bold mb-4">Suivi des projects</h3>
+                    <p class="text-sm text-gray-600">We bring Italy’s best to Africa, ensuring authentic Italian
+                        craftsmanship and premium quality in every product and project.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Ours partners -->
+    <section class="bg-neutral-100 md:py-20 py-10">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-bold text-neutral-700 text-center mb-8">Notre Parténaires</h2>
+            <div class="grid lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-4">
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-meta"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-cloudflare"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-sony"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-zoom"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-medium"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-visa"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-php"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white flex items-center justify-center border border-neutral-200 px-6 py-8 rounded-2xl">
+                    <div class="text-4xl text-neutral-400">
+                        <i class="fi fi-brands-intel"></i>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -243,6 +346,176 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="bg-white flex items-center md:py-20 py-10">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-bold text-center text-neutral-700 mb-8">Articles Récents</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <a href="/projects/id"
+                    class="group relative block overflow-hidden rounded-2xl hover:shadow-xl group transition-shadow">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1653566031486-dc4ead13a35d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="The title goes here"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="absolute inset-0 group-hover:from-primary bg-gradient-to-t from-neutral-950 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex items-center text-gray-300 text-sm">
+                            <i class="fi fi-rr-clock inline-block ml-2 translate-y-0.5 -translate-x-2"></i>
+                            25th May 2023
+                        </div>
+                        <h3 class="text-2xl text-white font-bold mt-1 mb-2">The title goes here</h3>
+                        <p class="text-white text-sm line-clamp-2">
+                            A modern shopping complex featuring Italian architectural design and sustainable materials.
+                        </p>
+                    </div>
+                </a>
+                <a href="/projects/id"
+                    class="group relative block overflow-hidden rounded-2xl hover:shadow-xl group transition-shadow">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1653669487003-7d89b2020f3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="The title goes here"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="absolute inset-0 group-hover:from-primary bg-gradient-to-t from-neutral-950 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex items-center text-gray-300 text-sm">
+                            <i class="fi fi-rr-clock inline-block ml-2 translate-y-0.5 -translate-x-2"></i>
+                            25th May 2023
+                        </div>
+                        <h3 class="text-2xl text-white font-bold mt-1 mb-2">The title goes here</h3>
+                        <p class="text-white text-sm line-clamp-2">
+                            A modern shopping complex featuring Italian architectural design and sustainable materials.
+                        </p>
+                    </div>
+                </a>
+                <a href="/projects/id"
+                    class="group relative block overflow-hidden rounded-2xl hover:shadow-xl group transition-shadow">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1653566031535-bcf33e1c2893?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="The title goes here"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="absolute inset-0 group-hover:from-primary bg-gradient-to-t from-neutral-950 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex items-center text-gray-300 text-sm">
+                            <i class="fi fi-rr-clock inline-block ml-2 translate-y-0.5 -translate-x-2"></i>
+                            25th May 2023
+                        </div>
+                        <h3 class="text-2xl text-white font-bold mt-1 mb-2">The title goes here</h3>
+                        <p class="text-white text-sm line-clamp-2">
+                            A modern shopping complex featuring Italian architectural design and sustainable materials.
+                        </p>
+                    </div>
+                </a>
+
+
+            </div>
+
+            <div class="max-w-[125px] m-auto text-center pt-10">
+                <a href="/contact"
+                    class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                    View all
+                    <i class="fi fi-rr-arrow-small-right translate-y-0.5 inline-block"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- faq -->
+    <section class="bg-white">
+        <!-- FAQ Categories -->
+        <div class="max-w-[1200px] mx-auto px-4 py-16">
+            <h2 class="md:text-3xl text-2xl font-bold text-neutral-700 text-center mb-8">Common Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-neutral-100 border border-neutral-200 px-6 py-4 rounded-2xl">
+                    <button class="w-full text-left flex justify-between items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold text-neutral-700">What products does ItalAfrica Group offer?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-neutral-600">We offer a wide range of premium Italian products, including
+                            furniture, kitchens, hardware, cooling systems, LED lighting, power generators, tiles,
+                            hospital equipment, and bitumen insulation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-neutral-100 border border-neutral-200 px-6 py-4 rounded-2xl">
+                    <button class="w-full text-left flex justify-between items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2  font-semibold text-neutral-700">Where does ItalAfrica Group operate?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-neutral-600">We operate across SADC (Southern Africa), EAC (East Africa),
+                            and West Africa, delivering high-quality Italian solutions tailored for African markets.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-neutral-100 border border-neutral-200 px-6 py-4 rounded-2xl">
+                    <button class="w-full text-left flex justify-between items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold text-neutral-700">How can I contact ItalAfrica Group?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-neutral-600">You can reach us via email at <a
+                                href="mailto:italafricagroup@yahoo.com"
+                                class="text-primary hover:underline">italafricagroup@yahoo.com</a> or call us at <a
+                                href="tel:+393429801567" class="text-primary hover:underline">+39 342 980 1567</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-neutral-100 border border-neutral-200 px-6 py-4 rounded-2xl">
+                    <button class="w-full text-left flex justify-between items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold text-neutral-700">Do you offer customized solutions?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-neutral-600">Yes, we provide tailored products and services for both luxury
+                            and industrial projects, ensuring that each solution meets your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative bg-neutral-950 h-[45vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                Need Custom Solutions?
+            </h1>
+            <p class="max-w-[650px] text-md m-auto text-white my-4">
+                Our Italian experts can tailor products to your specific project requirements.
+            </p>
+            <a href="/contact"
+                class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                Contact
+            </a>
+
+        </div>
+
+        <div class="hidden absolute top-0 left-0 w-full h-full bg-gradient-to-t from-transparent to-gray-950 z-20">
+        </div>
+
+        <!-- bg image -->
+        <div class="absolute bottom-0 bg-neutral-950/20 w-full md:h-[55vh] h-[65vh] z-10">
+            <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-20"
+                src="https://images.unsplash.com/photo-1653566031535-bcf33e1c2893?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
         </div>
     </section>
 
@@ -310,11 +583,10 @@
             </div>
 
             <!-- Certifications -->
-            <div class="text-center mt-8 border-t border-neutral-800 py-6">
-                <p class="text-sm text-neutral-400">© <span id="copyright"></span> ItalAfrica Group. All rights
-                    reserved.
-                </p>
-                <p class="text-sm mt-2">Certified: <span class="text-primary">Made in Italy</span></p>
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">© <span id="copyright"></span> PACC - Tous droits Reservé</p>
+                <p class="text-sm text-neutral-400">Designed by <a target="_blank" href="https://www.klevadev.com"
+                        class="text-primary">Clever Designer</a></p>
             </div>
         </div>
     </footer>
@@ -353,6 +625,28 @@
         const copyright = new Date().getFullYear();
         document.getElementById('copyright').innerHTML = copyright;
     </script>
+
+    <!-- faq -->
+    <script>
+        document.querySelectorAll('.bg-neutral-100 button').forEach(button => {
+          button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('span');
+      
+            // Toggle the max-height of the content
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null; // Collapse
+              icon.textContent = '+';
+            } else {
+              content.style.maxHeight = content.scrollHeight + 'px'; // Expand
+              icon.textContent = '-';
+            }
+      
+            // Rotate the icon
+            icon.classList.toggle('rotate-180');
+          });
+        });
+      </script>
 
 
 </body>

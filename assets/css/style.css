@@ -6,6 +6,11 @@
     font-family: "Quicksand", sans-serif;
 }
 
+::selection{
+  background-color: #ffd5d7e7;
+  color: #641316;
+}
+
 /* h1, h2, h3, h4{
     font-family: "Playfair Display", serif;
 }
