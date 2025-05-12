@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pacc est une agence spécialisée en comptabilité, fiscalité, contrôle et audit. Nous proposons des solutions financières fiables et des services d'audit adaptés à vos besoins.">
+    <meta name="keywords"
+        content="Pacc, Comptabilité, Fiscalité, Contrôle, Audit, Solutions Financières, Services d'Audit, Conseil Financier, Cabinet Comptable">
+    <meta name="author" content="Pacc - Cabinet de Conseil et d'Audit">
+    <title>Nos Services - PACC Expertise en Comptabilité, Fiscalité, Contrôle & Audit</title>
+
+    <meta name="theme-color" content="#da373d">
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da373d',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-neutral-100">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div
+                class="animate-spin rounded-full h-20 w-20 flex justify-center items-center border-b-2 border-r-2 border-primary">
+                <div
+                    class="animate-spin rounded-full h-16 w-16 flex justify-center items-center border-b-2 border-r-2 border-neutral-700">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+    <div
+        class="overlay md:translate-x-full translate-x-[750px] duration-300 bg-neutral-900 bg-opacity-75 fixed top-0 left-0 w-full h-screen z-50">
+    </div>
+
+    <!-- navbar -->
+    <nav
+        class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-white bg-opacity-75 border-b border-neutral-100 z-50">
+        <!-- container -->
+        <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
+            <div class="w-32 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul id="navItems"
+                class="md:relative fixed top-0 left-0 md:bg-transparent bg-white md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm font-medium text-neutral-700 md:items-center justify-start md:px-0 px-10 md:py-0 py-3 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                <div class="md:hidden block w-32 pb-4">
+                    <a href="/">
+                        <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                    </a>
+                </div>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/">Accueil</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/apropos">A propos</a></li>
+                <li><a class="hover:text-primary text-primary duration-300 ease-in-out" href="/services">Services</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/secteurs">Secteurs</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/partenaires">Parténaires</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/blogs">Blog</a></li>
+                <a href="/contact"
+                    class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                    Contact
+                </a>
+            </ul>
+
+            <div id="menu-bar"
+                class="hamburger md:hidden block w-8 h-8 flex items-center justify-center bg-primary text-white rounded-md cursor-pointer z-50">
+                <i class="fi fi-rr-bars-staggered text-lg translate-y-0.5"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-neutral-950 h-[45vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                Nos <span class="text-primary">Services</span> Professionnels
+            </h1>
+            <p class="max-w-[550px] m-auto text-white my-4">
+                Découvrez notre gamme complète de services conçus pour répondre à tous vos besoins en comptabilité, fiscalité, contrôle et audit.
+            </p>
+        </div>
+
+        <!-- bg image -->
+        <div class="absolute bottom-0 bg-neutral-950/20 w-full h-[45vh] z-10">
+            <img class="w-full h-[45vh] object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1653566031414-4ac6936a3e66?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-neutral-100">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-neutral-700 mb-4">Nos Domaines d'Expertise</h2>
+                <p class="max-w-[700px] mx-auto text-gray-600 text-sm">
+                    PACC propose une gamme complète de services pour accompagner votre entreprise dans tous les aspects de sa gestion financière et administrative.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary flex items-center justify-center p-6">
+                            <i class="fi fi-rr-calculator text-5xl text-white"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Comptabilité</h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                                Tenue complète de vos livres comptables, établissement des états financiers, gestion de la paie et conseils en optimisation comptable.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Comptabilité générale et analytique</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Gestion de la paie et déclarations sociales</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Préparation des états financiers</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary flex items-center justify-center p-6">
+                            <i class="fi fi-rr-scale text-5xl text-white"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Fiscalité</h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                                Optimisation fiscale, déclarations fiscales, conseils en matière de TVA, impôts sur les sociétés et autres obligations fiscales.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Conseil et optimisation fiscale</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Déclarations fiscales (TVA, IS, IR, etc.)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Contentieux fiscal et assistance</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary flex items-center justify-center p-6">
+                            <i class="fi fi-rr-search text-5xl text-white"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Audit & Contrôle</h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                                Audit légal et contractuel, audit interne, contrôle de gestion et mise en place de tableaux de bord pour le pilotage de votre entreprise.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Audit légal et contractuel</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt=0.5 mr-2"></i>
+                                    <span>Audit interne et contrôle de gestion</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Diagnostic et recommandations</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary flex items-center justify-center p-6">
+                            <i class="fi fi-rr-briefcase text-5xl text-white"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Conseil & Accompagnement</h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                                Accompagnement dans la création d'entreprise, conseil en organisation, stratégie d'entreprise et assistance administrative.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Création et transmission d'entreprise</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Conseil en organisation et stratégie</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fi fi-rr-check-circle text-primary mt-0.5 mr-2"></i>
+                                    <span>Assistance administrative et juridique</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-neutral-700 mb-4">Notre Processus de Travail</h2>
+                <p class="max-w-[700px] mx-auto text-gray-600 text-sm">
+                    Une méthodologie rigoureuse pour garantir des résultats optimaux et une relation client transparente.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-neutral-700 mb-2">Diagnostic</h3>
+                    <p class="text-sm text-gray-600">
+                        Analyse approfondie de votre situation et identification de vos besoins spécifiques.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-neutral-700 mb-2">Proposition</h3>
+                    <p class="text-sm text-gray-600">
+                        Élaboration d'une solution sur mesure avec un plan d'action clair et des engagements précis.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-neutral-700 mb-2">Mise en Œuvre</h3>
+                    <p class="text-sm text-gray-600">
+                        Déploiement de notre expertise avec un suivi rigoureux et des ajustements si nécessaire.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-neutral-700 mb-2">Évaluation</h3>
+                    <p class="text-sm text-gray-600">
+                        Mesure des résultats obtenus et recommandations pour une amélioration continue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-neutral-100">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-neutral-700 mb-4">Ce Que Disent Nos Clients</h2>
+                <p class="max-w-[700px] mx-auto text-gray-600 text-sm">
+                    Découvrez les témoignages de nos clients satisfaits par la qualité de nos services et notre professionnalisme.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white border border-neutral-200 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-neutral-700">Sarah K.</h4>
+                            <p class="text-xs text-gray-500">Directrice Financière</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        "PACC a révolutionné notre gestion comptable. Leur expertise nous a permis d'optimiser nos processus et de réaliser des économies significatives."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white border border-neutral-200 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-neutral-700">Jean-Paul D.</h4>
+                            <p class="text-xs text-gray-500">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        "L'accompagnement de PACC dans la création de mon entreprise a été inestimable. Leur conseil fiscal m'a évité bien des soucis."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white border border-neutral-200 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-neutral-700">Amina R.</h4>
+                            <p class="text-xs text-gray-500">Directrice d'ONG</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        "L'audit réalisé par PACC nous a permis d'améliorer notre transparence financière et de renforcer la confiance de nos donateurs."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                        <i class="fi fi-rr-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative bg-neutral-950 h-[45vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                Prêt à Optimiser Votre Gestion Financière ?
+            </h1>
+            <p class="max-w-[650px] text-md m-auto text-white my-4">
+                Contactez-nous dès aujourd'hui pour discuter de vos besoins et découvrir comment nous pouvons vous aider à atteindre vos objectifs.
+            </p>
+            <a href="/contact"
+                class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                Contact
+            </a>
+        </div>
+
+        <div class="hidden absolute top-0 left-0 w-full h-full bg-gradient-to-t from-transparent to-gray-950 z-20">
+        </div>
+
+        <!-- bg image -->
+        <div class="absolute bottom-0 bg-neutral-950/20 w-full h-[45vh] z-10">
+            <img class="w-full h-[45vh] object-cover opacity-20"
+                src="https://images.unsplash.com/photo-1653566031535-bcf33e1c2893?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-white md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Contactez-nous</h3>
+                    <p class="text-sm text-neutral-400 mb-2">Email: <a href="#"
+                            class="text-neutral-400 hover:text-primary">contact@pacc.bi</a></p>
+                    <p class="text-sm text-neutral-400 mb-2">Téléphone: <a href="#" class="hover:text-primary">+257 61 23 45 67</a></p>
+                    <p class="text-sm text-neutral-400">Adresse: [Insert Address Here]</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-sm text-neutral-400 hover:text-primary">Accueil</a></li>
+                        <li><a href="/apropos" class="text-sm text-neutral-400 hover:text-primary">Apropos</a></li>
+                        <li><a href="/services" class="text-sm text-neutral-400 hover:text-primary">Services</a></li>
+                        <li><a href="/secteurs" class="text-sm text-neutral-400 hover:text-primary">Secteurs</a></li>
+                        <li><a href="/partenaires" class="text-sm text-neutral-400 hover:text-primary">Parténaires</a></li>
+                        <li><a href="/blogs" class="text-sm text-neutral-400 hover:text-primary">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="sm:w-[275px] w-full">
+                    <h3 class="text-xl font-bold mb-4">Restez Informé</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Abonnez-vous à notre newsletter pour recevoir les dernières actualités et mises à jour.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Votre email"
+                            class="w-full bg-neutral-900 text-sm text-white outline-none border border-neutral-800 focus:border-primary duration-500 p-2 sm:rounded-l-lg sm:rounded-none rounded-lg text-neutral-900">
+                        <button type="submit"
+                            class="inline-block sm:rounded-r-lg sm:rounded-none rounded-lg py-2 px-6 bg-primary hover:bg-primary/80 text-white">
+                            S'abonner
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Suivez-nous</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Suivez-nous sur les réseaux sociaux pour les dernières actualités et mises à jour.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-twitter-alt"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">© <span id="copyright"></span> PACC - Tous droits Reservé</p>
+                <p class="text-sm text-neutral-400">Designed by <a target="_blank" href="https://www.klevadev.com"
+                        class="text-primary">Clever Designer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#loader').fadeOut();
+        })
+    </script>
+
+    <!-- Copyright -->
+    <script>
+        const copyright = new Date().getFullYear();
+        document.getElementById('copyright').innerHTML = copyright;
+    </script>
+
+    <!-- faq -->
+    <script>
+        const faqTitle = document.querySelectorAll('.bg-neutral-100 button')
+        faqTitle.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('span');
+
+                // Toggle the max-height of the content
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null; // Collapse
+                    icon.textContent = '+';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px'; // Expand
+                    icon.textContent = '-';
+                }
+
+                // Rotate the icon
+                icon.classList.toggle('rotate-180');
+
+                button.classList.toggle('text-primary')
+            });
+        });
+    </script>
+</body>
+
+</html>
