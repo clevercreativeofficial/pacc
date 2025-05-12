@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Découvrez Pacc, votre partenaire en comptabilité, fiscalité, contrôle et audit. Notre histoire, notre mission et notre équipe d'experts.">
+    <meta name="keywords"
+        content="Pacc, À propos, Mission, Vision, Valeurs, Équipe, Expertise, Cabinet comptable, Audit, Conseil fiscal">
+    <meta name="author" content="Pacc - Cabinet de Conseil et d'Audit">
+    <title>À propos de PACC - Notre Mission et Notre Équipe</title>
+
+    <meta name="theme-color" content="#da373d">
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da373d',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-neutral-100">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div
+                class="animate-spin rounded-full h-20 w-20 flex justify-center items-center border-b-2 border-r-2 border-primary">
+                <div
+                    class="animate-spin rounded-full h-16 w-16 flex justify-center items-center border-b-2 border-r-2 border-neutral-700">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+    <div
+        class="overlay md:translate-x-full translate-x-[750px] duration-300 bg-neutral-900 bg-opacity-75 fixed top-0 left-0 w-full h-screen z-50">
+    </div>
+
+    <!-- navbar -->
+    <nav
+        class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-white bg-opacity-75 border-b border-neutral-100 z-50">
+        <!-- container -->
+        <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
+            <div class="w-32 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul id="navItems"
+                class="md:relative fixed top-0 left-0 md:bg-transparent bg-white md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm font-medium text-neutral-700 md:items-center justify-start md:px-0 px-10 md:py-0 py-3 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                <div class="md:hidden block w-32 pb-4">
+                    <a href="/">
+                        <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                    </a>
+                </div>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/">Accueil</a></li>
+                <li><a class="hover:text-primary text-primary duration-300 ease-in-out" href="/apropos">A propos</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/services">Services</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/secteurs">Secteurs</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/partenaires">Parténaires</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/blogs">Blog</a></li>
+                <a href="/contact"
+                    class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                    Contact
+                </a>
+
+            </ul>
+
+            <div id="menu-bar"
+                class="hamburger md:hidden block w-8 h-8 flex items-center justify-center bg-primary text-white rounded-md cursor-pointer z-50">
+                <i class="fi fi-rr-bars-staggered text-lg translate-y-0.5"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section
+        class="relative bg-gradient-to-r from-transparent to-white md:h-[45vh] h-[55vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                À propos de <span class="text-primary">PACC</span>
+            </h1>
+            <p class="max-w-[550px] m-auto text-white my-4">
+                Découvrez notre histoire, notre mission et notre engagement envers l'excellence financière.
+            </p>
+        </div>
+
+        <!-- bg image -->
+        <div class="absolute bottom-0 bg-neutral-950 w-full md:h-[45vh] h-[55vh] z-10">
+            <img class="w-full md:h-[45vh] h-[55vh] object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1653566031414-4ac6936a3e66?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-neutral-100">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+                <!-- Image -->
+                <div class="mb-12 lg:mb-0">
+                    <div class="rounded-xl overflow-hidden h-full">
+                        <img src="https://images.unsplash.com/photo-1653566031486-dc4ead13a35d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Notre histoire" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl font-bold text-neutral-700 mb-6">Notre Histoire</h2>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Fondé en 2010, PACC est né de la volonté de créer un cabinet d'expertise comptable et d'audit
+                        qui combine rigueur professionnelle et approche personnalisée. Depuis notre création, nous avons
+                        accompagné plus de 200 entreprises dans leur développement et leur conformité financière.
+                    </p>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Notre croissance organique témoigne de la confiance que nos clients nous accordent. D'une petite
+                        équipe de 3 experts à nos débuts, nous comptons aujourd'hui plus de 30 collaborateurs répartis
+                        dans 3 bureaux régionaux.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="text-primary font-bold text-xl mb-2">2010</h4>
+                            <p class="text-neutral-700 text-sm">Fondation de PACC</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="text-primary font-bold text-xl mb-2">2015</h4>
+                            <p class="text-neutral-700 text-sm">Ouverture du 2ème bureau</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="text-primary font-bold text-xl mb-2">2018</h4>
+                            <p class="text-neutral-700 text-sm">Certification ISO 9001</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="text-primary font-bold text-xl mb-2">2023</h4>
+                            <p class="text-neutral-700 text-sm">+200 clients accompagnés</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-white">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-bold text-neutral-700 text-center mb-12">Notre Mission & Vision</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Mission -->
+                <div class="bg-neutral-100 p-8 rounded-2xl">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-bullseye-arrow translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-700 mb-4">Notre Mission</h3>
+                    <p class="text-gray-600 text-sm">
+                        Accompagner nos clients dans leur développement en leur offrant des solutions comptables et
+                        fiscales sur mesure, tout en garantissant la conformité et la transparence de leurs opérations
+                        financières.
+                    </p>
+                </div>
+                
+                <!-- Vision -->
+                <div class="bg-neutral-100 p-8 rounded-2xl">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-eye translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-700 mb-4">Notre Vision</h3>
+                    <p class="text-gray-600 text-sm">
+                        Devenir le partenaire de référence en matière d'expertise comptable et d'audit en Afrique,
+                        reconnu pour notre intégrité, notre innovation et notre impact positif sur l'économie locale.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-16 bg-neutral-100">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-bold text-neutral-700 text-center mb-12">Nos Valeurs</h2>
+            
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+                <!-- Intégrité -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-hand-holding-heart translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-neutral-700 mb-2">Intégrité</h3>
+                    <p class="text-gray-600 text-sm">
+                        Nous agissons avec éthique et transparence dans toutes nos relations et recommandations.
+                    </p>
+                </div>
+                
+                <!-- Excellence -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-medal translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-neutral-700 mb-2">Excellence</h3>
+                    <p class="text-gray-600 text-sm">
+                        Nous visons l'excellence dans chaque mission, avec rigueur professionnelle et expertise pointue.
+                    </p>
+                </div>
+                
+                <!-- Innovation -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-lightbulb translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-neutral-700 mb-2">Innovation</h3>
+                    <p class="text-gray-600 text-sm">
+                        Nous adoptons les meilleures pratiques et technologies pour des solutions avant-gardistes.
+                    </p>
+                </div>
+                
+                <!-- Engagement -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-handshake translate-y-0.5 inline-block"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-neutral-700 mb-2">Engagement</h3>
+                    <p class="text-gray-600 text-sm">
+                        Nous nous engageons pleinement envers nos clients et leur réussite à long terme.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-16 bg-white">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-bold text-neutral-700 text-center mb-12">Notre Équipe</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-neutral-100 rounded-xl overflow-hidden">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Jean Niyonkuru" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-neutral-700">Jean Niyonkuru</h3>
+                        <p class="text-primary text-sm mb-3">Directeur Général</p>
+                        <p class="text-gray-600 text-sm">
+                            Expert-comptable avec 15 ans d'expérience, Jean dirige notre cabinet avec vision et
+                            engagement.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-neutral-100 rounded-xl overflow-hidden">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Marie Kanyana" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-neutral-700">Marie Kanyana</h3>
+                        <p class="text-primary text-sm mb-3">Responsable Audit</p>
+                        <p class="text-gray-600 text-sm">
+                            Spécialiste en audit financier avec une expertise reconnue dans le secteur bancaire.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-neutral-100 rounded-xl overflow-hidden">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Pascal Ndayishimiye" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-neutral-700">Pascal Ndayishimiye</h3>
+                        <p class="text-primary text-sm mb-3">Responsable Fiscalité</p>
+                        <p class="text-gray-600 text-sm">
+                            Expert en droit fiscal et optimisation fiscale pour les entreprises multinationales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="/contact"
+                    class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                    Rencontrer notre équipe
+                    <i class="fi fi-rr-arrow-small-right translate-y-0.5 inline-block"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative bg-neutral-950 h-[45vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                Prêt à transformer votre gestion financière ?
+            </h1>
+            <p class="max-w-[650px] text-md m-auto text-white my-4">
+                Nos experts sont à votre disposition pour discuter de vos besoins et vous proposer des solutions
+                sur mesure.
+            </p>
+            <a href="/contact"
+                class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                Contactez-nous
+            </a>
+        </div>
+
+        <div class="hidden absolute top-0 left-0 w-full h-full bg-gradient-to-t from-transparent to-gray-950 z-20">
+        </div>
+
+        <!-- bg image -->
+        <div class="absolute bottom-0 bg-neutral-950/20 w-full md:h-[45vh] h-[55vh] z-10">
+            <img class="w-full md:h-[45vh] h-[55vh] object-cover opacity-20"
+                src="https://images.unsplash.com/photo-1653669487003-7d89b2020f3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-white  md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-neutral-400 mb-2">Email: <a href="#"
+                            class="text-neutral-400 hover:text-primary">[Insert Email Here]</a></p>
+                    <p class="text-sm text-neutral-400 mb-2">Phone: <a href="#" class="hover:text-primary">[Insert Phone
+                            Number Here]</a></p>
+                    <p class="text-sm text-neutral-400">Address: [Insert Address Here]</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-sm text-neutral-400 hover:text-primary">Accueil</a></li>
+                        <li><a href="/apropos" class="text-sm text-neutral-400 hover:text-primary">Apropos</a></li>
+                        <li><a href="/services" class="text-sm text-neutral-400 hover:text-primary">Services</a></li>
+                        <li><a href="/secteurs" class="text-sm text-neutral-400 hover:text-primary">Secteurs</a></li>
+                        <li><a href="/partenaires" class="text-sm text-neutral-400 hover:text-primary">Parténaires</a>
+                        </li>
+                        <li><a href="/blogs" class="text-sm text-neutral-400 hover:text-primary">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="sm:w-[275px] w-full">
+                    <h3 class="text-xl font-bold mb-4">Stay Updated</h3>
+                    <p class="text-sm text-neutral-400 mb-4">Subscribe to our newsletter for the latest updates and
+                        news.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-neutral-900 text-sm text-white outline-none border border-neutral-800 focus:border-primary duration-500 p-2 sm:rounded-l-lg sm:rounded-none rounded-lg text-neutral-900">
+                        <button type="submit"
+                            class="inline-block sm:rounded-r-lg sm:rounded-none rounded-lg py-2 px-6 bg-primary hover:bg-primary/80 text-white">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <p class="text-sm text-neutral-400 mb-4">Follow us and stay connected on social media for the latest
+                        updates and news.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-twitter-alt"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">© <span id="copyright"></span> PACC - Tous droits Reservé</p>
+                <p class="text-sm text-neutral-400">Designed by <a target="_blank" href="https://www.klevadev.com"
+                        class="text-primary">Clever Designer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#loader').fadeOut();
+        })
+    </script>
+
+    <!-- Copyright -->
+    <script>
+        const copyright = new Date().getFullYear();
+        document.getElementById('copyright').innerHTML = copyright;
+    </script>
+
+</body>
+
+</html>
