@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pacc est une agence spécialisée en comptabilité, fiscalité, contrôle et audit. Nous proposons des solutions financières fiables et des services d'audit adaptés à vos besoins.">
+    <meta name="keywords"
+        content="Pacc, Comptabilité, Fiscalité, Contrôle, Audit, Solutions Financières, Services d'Audit, Conseil Financier, Cabinet Comptable">
+    <meta name="author" content="Pacc - Cabinet de Conseil et d'Audit">
+    <title>Blog - PACC Expertise en Comptabilité, Fiscalité, Contrôle & Audit</title>
+
+    <meta name="theme-color" content="#da373d">
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da373d',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-neutral-100">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div
+                class="animate-spin rounded-full h-20 w-20 flex justify-center items-center border-b-2 border-r-2 border-primary">
+                <div
+                    class="animate-spin rounded-full h-16 w-16 flex justify-center items-center border-b-2 border-r-2 border-neutral-700">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+    <div
+        class="overlay md:translate-x-full translate-x-[750px] duration-300 bg-neutral-900 bg-opacity-75 fixed top-0 left-0 w-full h-screen z-50">
+    </div>
+
+    <!-- navbar -->
+    <nav
+        class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-white bg-opacity-75 border-b border-neutral-100 z-50">
+        <!-- container -->
+        <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
+            <div class="w-32 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul id="navItems"
+                class="md:relative fixed top-0 left-0 md:bg-transparent bg-white md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm font-medium text-neutral-700 md:items-center justify-start md:px-0 px-10 md:py-0 py-3 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                <div class="md:hidden block w-32 pb-4">
+                    <a href="/">
+                        <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                    </a>
+                </div>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/">Accueil</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/apropos">A propos</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/services">Services</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/secteurs">Secteurs</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/partenaires">Parténaires</a></li>
+                <li><a class="hover:text-primary text-primary duration-300 ease-in-out" href="/blogs">Blog</a></li>
+                <a href="/contact"
+                    class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                    Contact
+                </a>
+            </ul>
+
+            <div id="menu-bar"
+                class="hamburger md:hidden block w-8 h-8 flex items-center justify-center bg-primary text-white rounded-md cursor-pointer z-50">
+                <i class="fi fi-rr-bars-staggered text-lg translate-y-0.5"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-neutral-950 h-[45vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                Notre <span class="text-primary">Blog</span> Expert
+            </h1>
+            <p class="max-w-[550px] m-auto text-white my-4">
+                Découvrez nos articles et analyses sur les dernières tendances en comptabilité, fiscalité, audit et contrôle de gestion.
+            </p>
+        </div>
+
+        <!-- bg image -->
+        <div class="absolute bottom-0 bg-neutral-950/20 w-full h-[45vh] z-10">
+            <img class="w-full h-[45vh] object-cover opacity-40"
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-neutral-100">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-neutral-700 mb-2">Articles Récents</h2>
+                    <p class="text-gray-600 text-sm">Découvrez nos dernières publications</p>
+                </div>
+                <div class="md:w-fit w-full mt-4 md:mt-0">
+                    <div class="relative">
+                        <select class="appearance-none w-full bg-white border border-neutral-300 rounded-lg pl-4 pr-8 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary">
+                            <option>Trier par: Plus récent</option>
+                            <option>Trier par: Plus ancien</option>
+                            <option>Trier par: Plus populaire</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <i class="fi fi-rr-angle-small-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Blog Post 1 -->
+                <article class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <a href="/blog/article-1" class="block">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Article 1"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span class="mr-3">15 Juin 2023</span>
+                                <span><i class="fi fi-rr-clock mr-1"></i> 5 min de lecture</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Les nouvelles réglementations fiscales 2023</h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                Décryptage des principales modifications fiscales à prendre en compte pour votre entreprise cette année.
+                            </p>
+                            <div class="flex items-center text-primary text-sm font-medium">
+                                Lire l'article <i class="fi fi-rr-arrow-small-right ml-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <a href="/blog/article-2" class="block">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Article 2"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span class="mr-3">2 Juin 2023</span>
+                                <span><i class="fi fi-rr-clock mr-1"></i> 8 min de lecture</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Optimiser son contrôle interne en période de croissance</h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                Comment adapter vos processus de contrôle interne lorsque votre entreprise connaît une phase d'expansion rapide.
+                            </p>
+                            <div class="flex items-center text-primary text-sm font-medium">
+                                Lire l'article <i class="fi fi-rr-arrow-small-right ml-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <a href="/blog/article-3" class="block">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Article 3"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span class="mr-3">20 Mai 2023</span>
+                                <span><i class="fi fi-rr-clock mr-1"></i> 6 min de lecture</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Les erreurs à éviter dans sa comptabilité</h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                Liste des erreurs courantes en comptabilité et comment les prévenir pour une gestion financière saine.
+                            </p>
+                            <div class="flex items-center text-primary text-sm font-medium">
+                                Lire l'article <i class="fi fi-rr-arrow-small-right ml-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <a href="/blog/article-4" class="block">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Article 4"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span class="mr-3">5 Mai 2023</span>
+                                <span><i class="fi fi-rr-clock mr-1"></i> 7 min de lecture</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Gestion des fonds pour les ONG</h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                Bonnes pratiques pour une gestion transparente et efficace des fonds dans les organisations à but non lucratif.
+                            </p>
+                            <div class="flex items-center text-primary text-sm font-medium">
+                                Lire l'article <i class="fi fi-rr-arrow-small-right ml-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <a href="/blog/article-5" class="block">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Article 5"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span class="mr-3">22 Avril 2023</span>
+                                <span><i class="fi fi-rr-clock mr-1"></i> 4 min de lecture</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">L'impact des nouvelles technologies sur l'audit</h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                Comment l'IA et la blockchain transforment les pratiques d'audit et de contrôle interne.
+                            </p>
+                            <div class="flex items-center text-primary text-sm font-medium">
+                                Lire l'article <i class="fi fi-rr-arrow-small-right ml-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <a href="/blog/article-6" class="block">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Article 6"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span class="mr-3">10 Avril 2023</span>
+                                <span><i class="fi fi-rr-clock mr-1"></i> 9 min de lecture</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-700 mb-3">Stratégies de réduction des coûts en période difficile</h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                Approches intelligentes pour réduire vos coûts sans compromettre la qualité de vos produits ou services.
+                            </p>
+                            <div class="flex items-center text-primary text-sm font-medium">
+                                Lire l'article <i class="fi fi-rr-arrow-small-right ml-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-3 py-1 rounded-lg border border-neutral-300 text-neutral-600 hover:bg-primary hover:text-white">
+                        <i class="fi fi-rr-angle-small-left"></i>
+                    </a>
+                    <a href="#" class="px-3 py-1 rounded-lg bg-primary text-white">1</a>
+                    <a href="#" class="px-3 py-1 rounded-lg border border-neutral-300 text-neutral-600 hover:bg-primary hover:text-white">2</a>
+                    <a href="#" class="px-3 py-1 rounded-lg border border-neutral-300 text-neutral-600 hover:bg-primary hover:text-white">3</a>
+                    <span class="px-2 text-neutral-500">...</span>
+                    <a href="#" class="px-3 py-1 rounded-lg border border-neutral-300 text-neutral-600 hover:bg-primary hover:text-white">8</a>
+                    <a href="#" class="px-3 py-1 rounded-lg border border-neutral-300 text-neutral-600 hover:bg-primary hover:text-white">
+                        <i class="fi fi-rr-angle-small-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="py-16 bg-neutral-100">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-neutral-700 mb-4">Catégories Populaires</h2>
+                <p class="max-w-[700px] mx-auto text-gray-600 text-sm">
+                    Explorez nos articles par thème pour trouver le contenu qui vous intéresse le plus.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
+                <!-- Category 1 -->
+                <a href="/blog/category/fiscalite" class="group">
+                    <div class="bg-white border border-neutral-200 rounded-2xl p-6 text-center hover:bg-primary hover:border-primary transition-colors">
+                        <div class="w-16 h-16 bg-primary/10 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fi fi-rr-scale text-2xl text-primary group-hover:text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-neutral-700 group-hover:text-white mb-2">Fiscalité</h3>
+                        <p class="text-sm text-gray-600 group-hover:text-white/80">12 articles</p>
+                    </div>
+                </a>
+
+                <!-- Category 2 -->
+                <a href="/blog/category/comptabilite" class="group">
+                    <div class="bg-white border border-neutral-200 rounded-2xl p-6 text-center hover:bg-primary hover:border-primary transition-colors">
+                        <div class="w-16 h-16 bg-primary/10 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fi fi-rr-calculator text-2xl text-primary group-hover:text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-neutral-700 group-hover:text-white mb-2">Comptabilité</h3>
+                        <p class="text-sm text-gray-600 group-hover:text-white/80">18 articles</p>
+                    </div>
+                </a>
+
+                <!-- Category 3 -->
+                <a href="/blog/category/audit" class="group">
+                    <div class="bg-white border border-neutral-200 rounded-2xl p-6 text-center hover:bg-primary hover:border-primary transition-colors">
+                        <div class="w-16 h-16 bg-primary/10 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fi fi-rr-search text-2xl text-primary group-hover:text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-neutral-700 group-hover:text-white mb-2">Audit</h3>
+                        <p class="text-sm text-gray-600 group-hover:text-white/80">9 articles</p>
+                    </div>
+                </a>
+
+                <!-- Category 4 -->
+                <a href="/blog/category/controle-gestion" class="group">
+                    <div class="bg-white border border-neutral-200 rounded-2xl p-6 text-center hover:bg-primary hover:border-primary transition-colors">
+                        <div class="w-16 h-16 bg-primary/10 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fi fi-rr-graph text-2xl text-primary group-hover:text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-neutral-700 group-hover:text-white mb-2">Contrôle de Gestion</h3>
+                        <p class="text-sm text-gray-600 group-hover:text-white/80">7 articles</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative bg-neutral-950 h-[45vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-4xl text-3xl font-bold text-gray-200">
+                Vous avez des questions sur nos articles ?
+            </h1>
+            <p class="max-w-[650px] text-md m-auto text-white my-4">
+                Notre équipe d'experts est disponible pour échanger avec vous sur ces sujets et vous apporter des réponses personnalisées.
+            </p>
+            <a href="/contact"
+                class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                Contact
+            </a>
+        </div>
+
+        <div class="hidden absolute top-0 left-0 w-full h-full bg-gradient-to-t from-transparent to-gray-950 z-20">
+        </div>
+
+        <!-- bg image -->
+        <div class="absolute bottom-0 bg-neutral-950/20 w-full h-[45vh] z-10">
+            <img class="w-full h-[45vh] object-cover opacity-20"
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-white md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Contactez-nous</h3>
+                    <p class="text-sm text-neutral-400 mb-2">Email: <a href="#"
+                            class="text-neutral-400 hover:text-primary">contact@pacc.bi</a></p>
+                    <p class="text-sm text-neutral-400 mb-2">Téléphone: <a href="#" class="hover:text-primary">+257 61 23 45 67</a></p>
+                    <p class="text-sm text-neutral-400">Adresse: [Insert Address Here]</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-sm text-neutral-400 hover:text-primary">Accueil</a></li>
+                        <li><a href="/apropos" class="text-sm text-neutral-400 hover:text-primary">Apropos</a></li>
+                        <li><a href="/services" class="text-sm text-neutral-400 hover:text-primary">Services</a></li>
+                        <li><a href="/secteurs" class="text-sm text-neutral-400 hover:text-primary">Secteurs</a></li>
+                        <li><a href="/partenaires" class="text-sm text-neutral-400 hover:text-primary">Parténaires</a></li>
+                        <li><a href="/blogs" class="text-sm text-neutral-400 hover:text-primary">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="sm:w-[275px] w-full">
+                    <h3 class="text-xl font-bold mb-4">Restez Informé</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Abonnez-vous à notre newsletter pour recevoir les dernières actualités et mises à jour.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Votre email"
+                            class="w-full bg-neutral-900 text-sm text-white outline-none border border-neutral-800 focus:border-primary duration-500 p-2 sm:rounded-l-lg sm:rounded-none rounded-lg text-neutral-900">
+                        <button type="submit"
+                            class="inline-block sm:rounded-r-lg sm:rounded-none rounded-lg py-2 px-6 bg-primary hover:bg-primary/80 text-white">
+                            S'abonner
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Suivez-nous</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Suivez-nous sur les réseaux sociaux pour les dernières actualités et mises à jour.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-twitter-alt"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-primary">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">© <span id="copyright"></span> PACC - Tous droits Reservé</p>
+                <p class="text-sm text-neutral-400">Designed by <a target="_blank" href="https://www.klevadev.com"
+                        class="text-primary">Clever Designer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#loader').fadeOut();
+        })
+    </script>
+
+    <!-- Copyright -->
+    <script>
+        const copyright = new Date().getFullYear();
+        document.getElementById('copyright').innerHTML = copyright;
+    </script>
+
+    <!-- faq -->
+    <script>
+        const faqTitle = document.querySelectorAll('.bg-neutral-100 button')
+        faqTitle.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('span');
+
+                // Toggle the max-height of the content
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null; // Collapse
+                    icon.textContent = '+';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px'; // Expand
+                    icon.textContent = '-';
+                }
+
+                // Rotate the icon
+                icon.classList.toggle('rotate-180');
+
+                button.classList.toggle('text-primary')
+            });
+        });
+    </script>
+</body>
+
+</html>
